@@ -9,7 +9,7 @@ st.title("🔍 SHL Assessment Recommendation Tool")
 file_path = r"C:\Users\Creative Computers\OneDrive\Desktop\shl_project\Gen_AI Dataset.xlsx"
 
 try:
-    df = pd.read_excel(file_path)
+    df = pd.read_excel("dataset.xlsx")
     df.columns = df.columns.str.strip()  # Remove leading/trailing spaces
 except FileNotFoundError:
     st.error(f"File not found: {file_path}")
