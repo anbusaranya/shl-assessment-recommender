@@ -1,0 +1,10 @@
+<form method="post">
+  <input name="query" placeholder="Enter skills">
+  <button type="submit">Recommend</button>
+</form>
+
+<ul>
+{% for r in results %}
+  <li><a href="{{ r }}">{{ r }}</a></li>
+{% endfor %}
+</ul>
